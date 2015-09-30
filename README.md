@@ -6,7 +6,7 @@ Simple example of a to do list created with Android Studio (part of CodePath ass
 
 Application features:
 
-1. User can write text and select priority of items, which is dictated by varying colors
+1. User can write text and select different priorities for eah item, which are dictated by varying colors
 2. Items in list are editable
 3. Items can be deleted with a long press
 
