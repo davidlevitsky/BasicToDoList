@@ -32,7 +32,7 @@ public class CustomAdapter extends ArrayAdapter<ListItem> {
         editText.setText(activity.textItemName);
         String priority = activity.priority;
         if (priority.equals("High")){
-            editText.setTextColor(Color.BLUE);
+            editText.setTextColor(Color.BLUE); //use colors to set priorities
         }
         else if (priority.equals("Medium")){
             editText.setTextColor(Color.MAGENTA);
