@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ToDoActivity"
-    android:background="#ffb3f1ff">
+    android:background="#ffb2f1ff">
 
     <ListView
         android:layout_width="wrap_content"
