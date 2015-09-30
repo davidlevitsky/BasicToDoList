@@ -33,9 +33,6 @@ public class EditItemActivity extends ActionBarActivity {
         int position = getIntent().getIntExtra("position", 0);
         data.putExtra("position", position);
         data.putExtra("priority", spinner.getSelectedItem().toString());
-        //data.putExtra("")
-        //data.putExtra("code", 200); // ints work too
-        // Activity finished ok, return the data
         setResult(RESULT_OK, data); // set result code and bundle data for response
         itemText = "";
         finish(); // closes the activity, pass data to parent
