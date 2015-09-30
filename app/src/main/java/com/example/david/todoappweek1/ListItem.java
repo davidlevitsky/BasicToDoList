@@ -3,13 +3,13 @@ package com.example.david.todoappweek1;
 /**
  * Created by David on 6/16/2015.
  */
-public class CustomClass {
+public class ListItem {
         public String textItemName;
-        public String textStar;
+        public String priority;
 
-        public CustomClass(String textItemName, String textStar) {
+        public ListItem(String textItemName, String priority) {
             this.textItemName = textItemName;
-            this.textStar = textStar;
+            this.priority = priority;
         }
 }
 

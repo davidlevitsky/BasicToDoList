@@ -5,7 +5,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.david.todoappweek1.EditItemActivity"
-    android:onClick="onAddedItem">
+    android:onClick="onAddedItem"
+    android:background="#ffb3f1ff">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,7 +34,6 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="Edit Item"
             android:editable="true"
             android:lines="1"
             android:ellipsize="end"

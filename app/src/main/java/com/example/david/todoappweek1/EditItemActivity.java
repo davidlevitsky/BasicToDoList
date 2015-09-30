@@ -8,21 +8,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.RatingBar;
 import android.widget.Spinner;
 
 
 public class EditItemActivity extends ActionBarActivity {
 
     private EditText changeItem;
-    private RatingBar star;
     private String itemText;
     private Spinner spinner;
 
-    // ActivityTwo.java
-
-  public void onAddedItem(View v){
-      changeItem = (EditText) findViewById(R.id.changeItem);
+  public void onAddedItem(View v) {
       itemText = changeItem.getText().toString();
   }
 
@@ -37,7 +32,6 @@ public class EditItemActivity extends ActionBarActivity {
         //data.putExtra("priority", star.getVisibility());
         int position = getIntent().getIntExtra("position", 0);
         data.putExtra("position", position);
-
         data.putExtra("priority", spinner.getSelectedItem().toString());
         //data.putExtra("")
         //data.putExtra("code", 200); // ints work too
@@ -52,12 +46,15 @@ public class EditItemActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_item);
+        changeItem = (EditText) findViewById(R.id.changeItem);
         spinner = (Spinner) findViewById(R.id.spinner2);
+        String itemName = getIntent().getStringExtra("item name");
+        changeItem.setText(itemName);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> madapter = ArrayAdapter.createFromResource(this,
                 R.array.planets_array, android.R.layout.simple_spinner_item);
 // Specify the layout to use when the list of choices appears
-        madapter.  setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        madapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinner
         spinner.setAdapter(madapter);
     }

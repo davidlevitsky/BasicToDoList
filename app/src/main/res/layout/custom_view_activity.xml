@@ -14,13 +14,4 @@
         android:maxLines="1"
         android:ellipsize="end" />
 
-    <RatingBar
-        android:layout_width="34dp"
-        android:background="#ff0000"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>
